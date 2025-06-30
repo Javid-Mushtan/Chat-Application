@@ -3,9 +3,7 @@ import { EyeOff, Lock, Mail, MessageSquare, User, Eye, Loader2 } from "lucide-re
 import AuthImagePattern from "../components/AuthImagePattern.jsx";
 import toast from "react-hot-toast";
 import { useAuthStore } from "../store/useAuthStore.js";
-import { Link, useNavigate } from "react-router-dom"; // ✅ Fix: Link should come from 'react-router-dom'
-
-const navigate = useNavigate();
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUpPage = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -22,17 +20,25 @@ const SignUpPage = () => {
         if (!formData.email.trim()) return toast.error("Email is required");
         if (!/\S+@\S+\.\S+/.test(formData.email)) return toast.error("Invalid email address");
         if (formData.password.length < 6) return toast.error("Password must be at least 6 characters");
+        if (!formData.password) return toast.error("Password is  required");
 
         return true;
     };
 
+    const navigate = useNavigate();
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+
         const isValid = validateForm();
-        if (!isValid) return;
+
+        if(!isValid) return;
 
         const success = await signup(formData);
-        if (success) navigate("/login");
+        if(success) {
+            navigate("/");
+        }
+
     };
 
     return (
