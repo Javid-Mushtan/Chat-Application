@@ -84,26 +84,21 @@ export const logout = (req, res) => {
 };
 
 export const updateProfile = async (req, res) => {
-    try{
+    try {
         const { profilePic } = req.body;
-        const userId = req.user._id;
+        const userId = req.user.id;
 
-        if(!profilePic) {
-            return res.status(400).json({message: "Invalid Credentials"});
-        }
-
-        const uploadResponse = await cloudinary.uploader.upload(profilePic);
         const updatedUser = await User.findByIdAndUpdate(
             userId,
-            { profilePic: uploadResponse.secure_url },
+            { profilePic },
             { new: true }
         );
 
-    } catch(error) {
-        console.log("error in update profile: ", error);
-        res.status(500).json({message: "Internal server error"});
+        res.json(updatedUser);
+    } catch (err) {
+        res.status(500).json({ message: "Failed to update profile" });
     }
-};
+}
 
 export const checkAuth = async (req, res) => {
     try{
