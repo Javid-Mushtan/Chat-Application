@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7088bbde-b7a6-4a2c-a248-445a40963149" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/ChatContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/ChatHeader.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/MessageInput.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/NoChatSelected.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Sidebar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/skeleton/MessageSkeleton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/skeleton/SidebarSkeleton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/useChatStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/controllers/message.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/message.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/middleware/auth.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/middleware/auth.middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/routes/message.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/message.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/HomePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/useAuthStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/useAuthStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/MessageInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/MessageInput.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/useChatStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/useChatStore.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +86,7 @@
       <workItem from="1751290133566" duration="6948000" />
       <workItem from="1751348771698" duration="40224000" />
       <workItem from="1751518232185" duration="30395000" />
+      <workItem from="1751590910266" duration="9898000" />
     </task>
     <servers />
   </component>
